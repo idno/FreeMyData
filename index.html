@@ -429,6 +429,8 @@
 <script>
     $(document).ready(function() {
         $('#freemydataform').submit(function() {
+            $('#freemydataform').hide();
+            $('#datafreed').show();
             $.ajax({
                 type: 'POST',
                 url: 'http://withknown.com/subscribe/freemydata/',
@@ -436,6 +438,9 @@
                 success: function() {
                     $('#freemydataform').hide();
                     $('#datafreed').show()
+                },
+                failure: function() {
+                    alert("Oh no! Something went wrong. Please try again?");
                 }
             });
             return false;
