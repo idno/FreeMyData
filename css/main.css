@@ -29,7 +29,7 @@
     src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/lato-regular.woff') format('woff'),
          url('../fonts/lato-regular.ttf') format('truetype'),
-         url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+         /*url('../fonts/lato-regular.svg#LatoRegular') format('svg');*/
     font-weight: normal;
     font-style: normal;
 
@@ -42,7 +42,7 @@
     src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/lato-bold.woff') format('woff'),
          url('../fonts/lato-bold.ttf') format('truetype'),
-         url('../fonts/lato-bold.svg#LatoBold') format('svg');
+         /*url('../fonts/lato-bold.svg#LatoBold') format('svg');*/
     font-weight: normal;
     font-style: normal;
 
@@ -383,7 +383,6 @@ header ul.social li a.gplus{
     width: 50%;
     height: 405px;
     float: left;
-    background: url('../img/info_img.jpg') no-repeat;
 
     background-size: cover;
     -webkit-background-size: cover;
@@ -530,4 +529,4 @@ a{
 
 
 ::selection {color:#ffffff;background:#353434;}
-::-moz-selection {color:#ffffff;background:#353434;
+::-moz-selection {color:#ffffff;background:#353434;}
