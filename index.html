@@ -80,7 +80,7 @@
 					</div>
 						<div class="cta">
 						
-						<a href="https://twitter.com/settings/account" class="cta_btn">Export Data</a>
+						<a href="https://twitter.com/settings/account" class="cta_btn" id="twitter">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -332,6 +332,19 @@
 		<p class="rights">Brought to you by <a href="http://withknown.com">Known</a>.</p>
 		<p class="rights">If you'd like to get in touch, please <a href="mailto:hello@withknown.com">contact us</a>.</p>
 	</footer><!--  End Footer  -->
+	
+    <script>
+
+        function addListener(element, type, callback) {
+            if (element.addEventListener) element.addEventListener(type, callback);
+            else if (element.attachEvent) element.attachEvent('on' + type, callback);
+        }
+
+        addListener(document.getElementById('twitter'), 'click', function() {
+            ga('send', 'event', 'button', 'click', 'twitter');
+        });
+
+    </script>	
 
 </body>
 </html>
