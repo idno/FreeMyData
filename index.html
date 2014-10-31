@@ -26,6 +26,16 @@
   ga('send', 'pageview');
 
 </script>
+
+	<script>
+		var trackOutboundLink = function(url) {
+		ga('send', 'event', 'outbound', 'click', 'export', {'hitCallback':
+		function () {
+		document.location = url;
+		     }
+			 });
+			 }
+	</script>
 </head>
 <body>
 
@@ -80,7 +90,7 @@
 					</div>
 						<div class="cta">
 						
-						<a href="https://twitter.com/settings/account" class="cta_btn" id="twitter">Export Data</a>
+						<a href="https://twitter.com/settings/account" class="cta_btn" onclick="trackOutboundLink('https://twitter.com/settings/account'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -98,7 +108,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://www.facebook.com/settings" class="cta_btn">Export Data</a>
+						<a href="https://www.facebook.com/settings" class="cta_btn" onclick="trackOutboundLink('https://www.facebook.com/settings'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -129,7 +139,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://www.linkedin.com/settings/data-export-page" class="cta_btn">Export Data</a>
+						<a href="https://www.linkedin.com/settings/data-export-page" class="cta_btn" onclick="trackOutboundLink('https://www.linkedin.com/settings/data-export-page'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -147,7 +157,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://foursquare.com/feeds/" class="cta_btn">Export Data</a>
+						<a href="https://foursquare.com/feeds/" class="cta_btn" onclick="trackOutboundLink('https://foursquare.com/feeds/'); return false;">Export Data</a>
 						</div>
 				</div>				
 				<div class="feature">
@@ -195,7 +205,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://evernote.com/contact/support/kb/#!/article/28607737" class="cta_btn">Export Data</a>
+						<a href="https://evernote.com/contact/support/kb/#!/article/28607737" class="cta_btn" onclick="trackOutboundLink('https://evernote.com/contact/support/kb/#!/article/28607737'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -225,7 +235,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://account.app.net/settings/content/" class="cta_btn">Export Data</a>
+						<a href="https://account.app.net/settings/content/" class="cta_btn" onclick="trackOutboundLink('https://account.app.net/settings/content/'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -243,7 +253,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://www.google.com/settings/takeout" class="cta_btn">Export Data</a>
+						<a href="https://www.google.com/settings/takeout" class="cta_btn" onclick="trackOutboundLink('https://www.google.com/settings/takeout'); return false;">Export Data</a>
 						</div>
 				</div>				
 				<div class="feature">
@@ -273,7 +283,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="http://withknown.com" class="cta_btn">Export Data</a>
+						<a href="http://withknown.com" class="cta_btn" onclick="trackOutboundLink('http://withknown.com'); return false;">Export Data</a>
 						</div>
 				</div>
 				<div class="feature">
@@ -292,7 +302,7 @@
 						</div>
 					</div>
 						<div class="cta">
-						<a href="https://medium.com/me/settings" class="cta_btn">Export Data</a>
+						<a href="https://medium.com/me/settings" class="cta_btn" onclick="trackOutboundLink('https://medium.com/me/settings'); return false;">Export Data</a>
 						</div>
 				</div>				
 
@@ -333,18 +343,5 @@
 		<p class="rights">If you'd like to get in touch, please <a href="mailto:hello@withknown.com">contact us</a>.</p>
 	</footer><!--  End Footer  -->
 	
-    <script>
-
-        function addListener(element, type, callback) {
-            if (element.addEventListener) element.addEventListener(type, callback);
-            else if (element.attachEvent) element.attachEvent('on' + type, callback);
-        }
-
-        addListener(document.getElementById('twitter'), 'click', function() {
-            ga('send', 'event', 'button', 'click', 'twitter');
-        });
-
-    </script>	
-
 </body>
 </html>
